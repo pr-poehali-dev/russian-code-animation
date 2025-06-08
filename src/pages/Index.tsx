@@ -50,7 +50,7 @@ const Index = () => {
 
         <EarlyAccessForm />
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16 mt-12">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16 mt-12 md:items-stretch">
           {features.map((feature, index) => (
             <div
               key={index}
