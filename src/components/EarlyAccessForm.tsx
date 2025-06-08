@@ -21,9 +21,7 @@ const EarlyAccessForm = () => {
       <h2 className="text-3xl font-bold font-mono mb-4 bg-gradient-to-r from-accent to-highlight bg-clip-text text-[#ffffff]">
         Попробуйте в раннем доступе
       </h2>
-      <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-        Получите приоритетный доступ к новым функциям и возможностям платформы
-      </p>
+      <p className="text-muted-foreground mb-8 max-w-lg mx-auto"></p>
 
       <form
         onSubmit={handleSubmit}
