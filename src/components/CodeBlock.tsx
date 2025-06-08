@@ -75,7 +75,7 @@ const CodeBlock: React.FC = () => {
         </div>
 
         {/* Terminal content */}
-        <div className="p-6 font-code text-sm leading-relaxed min-h-[120px]">
+        <div className="p-6 font-code text-sm leading-relaxed min-h-[180px]">
           {displayedLines.map((line, index) => (
             <div
               key={index}
