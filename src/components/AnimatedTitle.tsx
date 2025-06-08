@@ -29,7 +29,7 @@ const AnimatedTitle: React.FC<AnimatedTitleProps> = ({
         <span className="animate-pulse text-accent">|</span>
       </h1>
       <div className="mt-[30px]">
-        <p className="md:text-lg font-medium text-center glow-text text-[12rem] md:text-[14rem] text-[#7B68EE]">
+        <p className="md:text-lg font-medium text-center glow-text text-[5rem] md:text-[5rem] text-[#7B68EE]">
           Создавайте одной командой
         </p>
       </div>
