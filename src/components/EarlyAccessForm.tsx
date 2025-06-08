@@ -33,7 +33,7 @@ const EarlyAccessForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="flex-1 font-mono border-[#24374E] focus:border-[#24374E] focus:ring-[#24374E]/20"
+          className="flex-1 border-[#24374E] focus:border-[#24374E] focus:ring-[#24374E]/20 font-[Arial,sans-serif]"
           disabled={isSubmitted}
         />
         <Button
