@@ -62,7 +62,7 @@ const Index = () => {
           ))}
         </div>
 
-        <ActionSection />
+        {/* Удален ActionSection */}
 
         {/* Footer */}
       </div>
