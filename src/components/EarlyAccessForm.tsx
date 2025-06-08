@@ -31,7 +31,7 @@ const EarlyAccessForm = () => {
       >
         <Input
           type="email"
-          placeholder="ваш@email.com"
+          placeholder="Введите ваш email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
