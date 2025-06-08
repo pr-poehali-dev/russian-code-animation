@@ -65,6 +65,13 @@ const Index = () => {
         {/* Удален ActionSection */}
 
         {/* Footer */}
+        <footer className="border-t border-border/30 mt-20 pt-8 pb-6">
+          <div className="text-center">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Prompt&gt;Run. Все права защищены.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
