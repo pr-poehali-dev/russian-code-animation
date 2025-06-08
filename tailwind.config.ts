@@ -61,7 +61,6 @@ export default {
       fontFamily: {
         mono: ["JetBrains Mono", "monospace"],
         arial: ["Arial", "sans-serif"],
-        "ibm-plex": ["IBM Plex Mono", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
