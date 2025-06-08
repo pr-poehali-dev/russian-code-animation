@@ -15,17 +15,17 @@ const CodeBlock: React.FC = () => {
     {
       text: "$ create-game Make a space shooter with neon graphics ✨",
       delay: 80,
-      color: "text-green-400",
+      color: "text-command",
     },
     {
       text: "🚀 Generating game assets... Creating game logic... Optimizing for web... 🌟",
       delay: 60,
-      color: "text-purple-400",
+      color: "text-highlight",
     },
     {
       text: "🎮 Game ready! Play now or customize further. |",
       delay: 100,
-      color: "text-blue-400",
+      color: "text-accent",
     },
   ];
 
@@ -61,30 +61,30 @@ const CodeBlock: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto mb-16">
-      <div className="bg-slate-900/80 border border-slate-700 rounded-lg overflow-hidden shadow-2xl">
+      <div className="bg-terminal border border-muted rounded-lg overflow-hidden shadow-2xl">
         {/* Terminal header */}
-        <div className="flex items-center justify-between px-4 py-3 bg-slate-800/60 border-b border-slate-700">
+        <div className="flex items-center justify-between px-4 py-3 bg-muted border-b border-muted">
           <div className="flex space-x-2">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
           </div>
-          <div className="text-slate-400 text-sm font-mono">
+          <div className="text-muted-foreground text-sm font-code">
             engine-arcade-terminal
           </div>
         </div>
 
         {/* Terminal content */}
-        <div className="p-6 font-mono text-sm leading-relaxed min-h-[120px]">
+        <div className="p-6 font-code text-sm leading-relaxed min-h-[120px]">
           {displayedLines.map((line, index) => (
             <div
               key={index}
-              className={`${codeLines[index]?.color || "text-white"} mb-2`}
+              className={`${codeLines[index]?.color || "text-system"} mb-2`}
             >
               {line}
               {index === currentLineIndex &&
                 currentCharIndex < codeLines[index].text.length && (
-                  <span className="animate-pulse text-white">|</span>
+                  <span className="animate-pulse text-accent">|</span>
                 )}
             </div>
           ))}

@@ -30,17 +30,17 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-highlight/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-16">
         <div className="text-center mb-16">
           <AnimatedTitle text="Поехали!" className="mb-8" />
-          <p className="text-xl text-slate-300 font-open-sans max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground font-mono max-w-3xl mx-auto leading-relaxed">
             Революционная платформа для создания приложений через искусственный
             интеллект
           </p>
