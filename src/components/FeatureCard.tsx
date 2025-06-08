@@ -18,18 +18,22 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <Card className="group relative overflow-hidden bg-terminal border-muted hover:border-accent/20 transition-all duration-300 h-full flex flex-col">
-      <CardContent className="relative p-8 text-center flex-1 flex flex-col justify-between">
+      <CardContent className="relative p-8 text-center flex-1 flex flex-col">
         <div className="mb-6 flex justify-center">
           <div className="p-4 rounded-full bg-accent/20 transition-colors duration-300">
             <Icon name={icon} size={32} className="text-[#7B68EE]" />
           </div>
         </div>
-        <h3 className="text-xl font-semibold text-system mb-4 font-mono">
-          {title}
-        </h3>
-        <p className="text-muted-foreground leading-relaxed font-arial">
-          {description}
-        </p>
+        <div className="h-16 flex items-center justify-center mb-4">
+          <h3 className="text-xl font-semibold text-system font-mono">
+            {title}
+          </h3>
+        </div>
+        <div className="flex-1 flex items-start">
+          <p className="text-muted-foreground leading-relaxed font-arial">
+            {description}
+          </p>
+        </div>
       </CardContent>
     </Card>
   );
