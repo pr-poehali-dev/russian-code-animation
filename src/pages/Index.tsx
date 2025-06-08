@@ -3,6 +3,7 @@ import AnimatedTitle from "@/components/AnimatedTitle";
 import FeatureCard from "@/components/FeatureCard";
 import ActionSection from "@/components/ActionSection";
 import CodeBlock from "@/components/CodeBlock";
+import EarlyAccessForm from "@/components/EarlyAccessForm";
 
 const Index = () => {
   const features = [
@@ -59,6 +60,8 @@ const Index = () => {
             </div>
           ))}
         </div>
+
+        <EarlyAccessForm />
 
         <ActionSection />
       </div>
