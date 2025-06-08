@@ -78,13 +78,13 @@ const CodeBlock: React.FC = () => {
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
           </div>
-          <div className="text-muted-foreground text-sm font-code">
+          <div className="text-muted-foreground text-sm font-ibm-mono">
             engine-arcade-terminal
           </div>
         </div>
 
         {/* Terminal content */}
-        <div className="p-6 font-code text-sm leading-relaxed min-h-[180px]">
+        <div className="p-6 font-ibm-mono text-sm leading-relaxed min-h-[180px]">
           {displayedLines.map((line, index) => (
             <div
               key={index}
