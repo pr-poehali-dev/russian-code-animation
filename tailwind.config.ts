@@ -59,8 +59,8 @@ export default {
         button: "#7B68EE",
       },
       fontFamily: {
-        mono: ["JetBrains Mono", "monospace"],
-        arial: ["Arial", "sans-serif"],
+        mono: ["IBM Plex Mono", "Fira Code", "monospace"],
+        code: ["Fira Code", "IBM Plex Mono", "monospace"],
       },
       borderRadius: {
         lg: "var(--radius)",
