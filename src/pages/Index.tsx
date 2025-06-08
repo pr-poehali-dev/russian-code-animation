@@ -63,6 +63,15 @@ const Index = () => {
         </div>
 
         <ActionSection />
+
+        {/* Footer */}
+        <footer className="mt-24 pt-8 border-t border-border">
+          <div className="text-center">
+            <p className="text-sm text-muted-foreground">
+              © 2025 Prompt&gt;Run. Все права защищены.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
