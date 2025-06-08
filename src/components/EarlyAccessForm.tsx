@@ -38,7 +38,11 @@ const EarlyAccessForm = () => {
           className="flex-1 font-mono"
           disabled={isSubmitted}
         />
-        <Button type="submit" className="px-6 font-mono" disabled={isSubmitted}>
+        <Button
+          type="submit"
+          className="px-6 font-mono bg-button hover:bg-button/80 text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-button/25"
+          disabled={isSubmitted}
+        >
           {isSubmitted ? (
             <>
               <Icon name="Check" size={16} />
