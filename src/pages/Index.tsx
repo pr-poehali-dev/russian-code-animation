@@ -2,6 +2,7 @@ import React from "react";
 import AnimatedTitle from "@/components/AnimatedTitle";
 import FeatureCard from "@/components/FeatureCard";
 import ActionSection from "@/components/ActionSection";
+import CodeBlock from "@/components/CodeBlock";
 
 const Index = () => {
   const features = [
@@ -44,6 +45,8 @@ const Index = () => {
             интеллект
           </p>
         </div>
+
+        <CodeBlock />
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {features.map((feature, index) => (
