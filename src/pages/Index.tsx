@@ -42,7 +42,7 @@ const Index = () => {
         <div className="text-center mb-16">
           <AnimatedTitle text="Prompt>Run" className="mb-8" />
           <p className="text-xl text-muted-foreground font-mono max-w-3xl mx-auto leading-relaxed my-0 py-0">
-            Игры, сайты и приложения одной командой — как в терминале
+            Сайты, RPG, мобильные приложения, 3D-миры — что угодно!
           </p>
         </div>
 
