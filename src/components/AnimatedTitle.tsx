@@ -28,6 +28,11 @@ const AnimatedTitle: React.FC<AnimatedTitleProps> = ({
         {displayText}
         <span className="animate-pulse text-accent">|</span>
       </h1>
+      <div className="mt-[30px]">
+        <p className="text-base md:text-lg text-white font-medium text-center glow-text">
+          Создавайте игры, сайты и приложения одной командой
+        </p>
+      </div>
     </div>
   );
 };
