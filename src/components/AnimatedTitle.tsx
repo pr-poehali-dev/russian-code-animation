@@ -24,7 +24,7 @@ const AnimatedTitle: React.FC<AnimatedTitleProps> = ({
 
   return (
     <div className={`relative ${className}`}>
-      <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-system via-accent to-highlight bg-clip-text text-transparent font-mono">
+      <h1 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-system via-accent to-highlight bg-clip-text text-transparent font-mono">
         {displayText}
         <span className="animate-pulse text-accent">|</span>
       </h1>
