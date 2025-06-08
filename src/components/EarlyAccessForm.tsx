@@ -17,7 +17,7 @@ const EarlyAccessForm = () => {
   };
 
   return (
-    <div className="text-center py-16">
+    <div className="text-center py-[26px]">
       <h2 className="text-3xl font-bold font-mono mb-4 bg-gradient-to-r from-accent to-highlight bg-clip-text text-transparent">
         Попробуйте в раннем доступе
       </h2>
