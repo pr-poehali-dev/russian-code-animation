@@ -24,16 +24,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <Icon name={icon} size={32} className="text-[#7B68EE]" />
           </div>
         </div>
-        <div className="h-16 flex items-center justify-center mb-4">
-          <h3 className="text-xl font-semibold text-system font-mono">
-            {title}
-          </h3>
-        </div>
-        <div className="flex-1 flex items-start">
-          <p className="text-muted-foreground leading-relaxed font-arial">
-            {description}
-          </p>
-        </div>
+        <h3 className="text-xl font-semibold text-system font-mono mb-3">
+          {title}
+        </h3>
+        <p className="text-muted-foreground leading-relaxed font-arial">
+          {description}
+        </p>
       </CardContent>
     </Card>
   );
