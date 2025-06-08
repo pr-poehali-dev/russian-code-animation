@@ -61,7 +61,7 @@ const CodeBlock: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto mb-16">
-      <div className="bg-terminal border border-muted rounded-lg overflow-hidden shadow-2xl">
+      <div className="bg-terminal border border-muted rounded-lg overflow-hidden shadow-2xl hover:border-accent/20 transition-colors duration-300">
         {/* Terminal header */}
         <div className="flex items-center justify-between px-4 py-3 bg-muted border-b border-muted">
           <div className="flex space-x-2">
