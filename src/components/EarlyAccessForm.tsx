@@ -43,14 +43,11 @@ const EarlyAccessForm = () => {
         >
           {isSubmitted ? (
             <>
-              <Icon name="Check" size={16} />
+              <Icon name="Check" className="w-4 h-4 mr-2" />
               Отправлено
             </>
           ) : (
-            <>
-              <Icon name="Send" size={16} />
-              Отправить
-            </>
+            "Отправить"
           )}
         </Button>
       </form>
