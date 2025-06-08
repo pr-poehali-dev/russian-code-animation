@@ -1,0 +1,35 @@
+import React, { useState, useEffect } from "react";
+
+interface AnimatedTitleProps {
+  text: string;
+  className?: string;
+}
+
+const AnimatedTitle: React.FC<AnimatedTitleProps> = ({
+  text,
+  className = "",
+}) => {
+  const [displayText, setDisplayText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + text[currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, [currentIndex, text]);
+
+  return (
+    <div className={`relative ${className}`}>
+      <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent font-montserrat">
+        {displayText}
+        <span className="animate-pulse text-purple-400">|</span>
+      </h1>
+    </div>
+  );
+};
+
+export default AnimatedTitle;
