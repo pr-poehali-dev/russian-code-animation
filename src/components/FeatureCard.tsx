@@ -25,7 +25,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           </div>
         </div>
         <div className="h-16 flex items-center justify-center mb-4">
-          <h3 className="text-xl font-semibold text-system font-mono mb-1">
+          <h3 className="text-xl font-semibold text-system font-mono">
             {title}
           </h3>
         </div>
