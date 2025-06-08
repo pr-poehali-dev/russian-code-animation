@@ -41,7 +41,7 @@ const Index = () => {
       <div className="relative z-10 container mx-auto px-6 py-16">
         <div className="text-center mb-16">
           <AnimatedTitle text="Prompt>Run" className="mb-8" />
-          <p className="text-xl text-muted-foreground font-mono max-w-3xl mx-auto leading-relaxed my-0 py-0">
+          <p className="text-xl text-muted-foreground font-arial max-w-3xl mx-auto leading-relaxed my-0 py-0">
             Сайты, RPG, мобильные приложения, 3D-миры — что угодно!
           </p>
         </div>
