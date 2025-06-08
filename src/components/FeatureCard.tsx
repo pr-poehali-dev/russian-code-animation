@@ -21,7 +21,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       <CardContent className="relative p-8 text-center">
         <div className="mb-6 flex justify-center">
           <div className="p-4 rounded-full bg-accent/20 transition-colors duration-300">
-            <Icon name={icon} size={32} className="text-[#7B68EE]" />
+            <Icon name={icon} size={32} className="text-accent" />
           </div>
         </div>
         <h3 className="text-xl font-semibold text-system mb-4 font-mono">

@@ -56,15 +56,6 @@ const CodeBlock: React.FC = () => {
 
         return () => clearTimeout(timeout);
       }
-    } else {
-      // Restart animation after 5 seconds when all lines are complete
-      const timeout = setTimeout(() => {
-        setDisplayedLines([]);
-        setCurrentLineIndex(0);
-        setCurrentCharIndex(0);
-      }, 5000);
-
-      return () => clearTimeout(timeout);
     }
   }, [currentLineIndex, currentCharIndex]);
 
