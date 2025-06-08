@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   gradient = "from-purple-500/20 to-blue-500/20",
 }) => {
   return (
-    <Card className="group relative overflow-hidden bg-terminal border-muted hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-accent/20">
+    <Card className="group relative overflow-hidden bg-terminal border-muted hover:border-accent/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-accent/20">
       <div
         className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
       />
