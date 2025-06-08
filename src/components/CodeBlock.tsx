@@ -10,7 +10,6 @@ const CodeBlock: React.FC = () => {
   const [displayedLines, setDisplayedLines] = useState<string[]>([]);
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
-  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
   const codeLines: CodeLine[] = [
     {
@@ -58,8 +57,14 @@ const CodeBlock: React.FC = () => {
         return () => clearTimeout(timeout);
       }
     } else {
-      // Animation is complete
-      setIsAnimationComplete(true);
+      // Restart animation after 5 seconds when all lines are complete
+      const timeout = setTimeout(() => {
+        setDisplayedLines([]);
+        setCurrentLineIndex(0);
+        setCurrentCharIndex(0);
+      }, 5000);
+
+      return () => clearTimeout(timeout);
     }
   }, [currentLineIndex, currentCharIndex]);
 
@@ -90,9 +95,6 @@ const CodeBlock: React.FC = () => {
                 currentCharIndex < codeLines[index].text.length && (
                   <span className="animate-pulse text-accent">|</span>
                 )}
-              {isAnimationComplete && index === codeLines.length - 1 && (
-                <span className="animate-pulse text-accent ml-1">|</span>
-              )}
             </div>
           ))}
         </div>
