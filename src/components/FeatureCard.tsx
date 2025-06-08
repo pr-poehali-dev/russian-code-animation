@@ -17,18 +17,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   gradient = "from-purple-500/20 to-blue-500/20",
 }) => {
   return (
-    <Card className="group relative overflow-hidden bg-terminal border-muted hover:border-accent/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-accent/20">
-      <div
-        className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
-      />
+    <Card className="group relative overflow-hidden bg-terminal border-muted hover:border-accent/20 transition-all duration-300">
       <CardContent className="relative p-8 text-center">
         <div className="mb-6 flex justify-center">
-          <div className="p-4 rounded-full bg-accent/20 group-hover:bg-accent/30 transition-colors duration-300">
-            <Icon
-              name={icon}
-              size={32}
-              className="text-accent group-hover:text-system"
-            />
+          <div className="p-4 rounded-full bg-accent/20 transition-colors duration-300">
+            <Icon name={icon} size={32} className="text-accent" />
           </div>
         </div>
         <h3 className="text-xl font-semibold text-system mb-4 font-mono">
