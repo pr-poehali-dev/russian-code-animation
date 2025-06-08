@@ -49,6 +49,8 @@ const Index = () => {
 
         <CodeBlock />
 
+        <EarlyAccessForm />
+
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
           {features.map((feature, index) => (
             <div
@@ -60,8 +62,6 @@ const Index = () => {
             </div>
           ))}
         </div>
-
-        <EarlyAccessForm />
 
         <ActionSection />
       </div>
